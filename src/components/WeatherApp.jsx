@@ -77,7 +77,7 @@ const WeatherApp = () => {
   // Fungsi untuk membagikan cuaca ke WhatsApp
   const shareWeather = () => {
     if (weatherData) {
-      const shareText = `Current weather in ${weatherData.name}: ${weatherData.main.temp}°C, ${weatherData.weather[0].description}. Check it out at https://website-saya.vercel.app!!`;
+      const shareText = `Current weather in ${weatherData.name}: ${weatherData.main.temp}°C, ${weatherData.weather[0].description}. Check it out at https://weather-app-by-bima.vercel.app!!`;
       const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
       window.open(whatsappUrl, '_blank');
     } else {
